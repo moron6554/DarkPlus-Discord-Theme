@@ -1,153 +1,91 @@
 /**
-* @name LilyPichu
-* @author Nyria#3863
-* @description A theme based on @Melonturtle_ stream design
-* @invite rtBQX5D3bD
-* @version 1.4
-* @donate https://ko-fi.com/nyria
+ * @name Discord+
+ * @author PlusInsta
+ * @authorId 309931975102300160
+ * @authorLink https://plusinsta.xyz
+ * @version 3.2.1
+ * @description A sleek, customizable Discord theme.
+ * @donate https://ko-fi.com/plusinsta
+ * @website https://plusinsta.github.io/discord-plus
+ * @source https://github.com/PlusInsta/discord-plus
+ * @updateUrl https://plusinsta.github.io/discord-plus/DiscordPlus.theme.css
+ * @invite 2Jwh2nS
 */
-@import url("https://nyri4.github.io/LilyPichu/main.css");
+@import url(https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css);
 
-/* Remove decorations */
-
-
-:root {
-  /* --- User variables --- */
-
-  /* Jumping GIF */
-  --jumping-gif: url("https://i.imgur.com/dCd49s0.gif");
-
-  /* Background (if you want an image replace it by : 
-
---background-tertiary-alt: url("image-link"); without that => */
-  --background-tertiary-alt: url(https://wallpapercave.com/wp/wp1956361.jpg) ;
-
-  /* Border-radius for the whole theme */
-  --border-radius: 20px;
-}
+/* I've commented most of these values so you can change them yourself. If you're having trouble, or you want to do more than what these values allow for, a volunteer might be able to help you in my server. */
 
 .theme-dark {
-  /* Text */
-  --text-normal: #f8e1e5;
-  --header-primary: #f8e1e5;
-  --interactive-normal: #fab1bd;
-  --channels-default: #f8e1e5;
+/* Backdrop image which is shown behind the app. Can also be an HTML color. Falls back to accent color if invalid.
+   To use an image from your computer, upload it somewhere first, copy its link, then paste it below. */
+  --dplus-backdrop: url(https://wallpapercave.com/wp/wp1956361.jpg);
 
-  --text-muted: #e2c1c7;
-  --interactive-muted: #ad8c91;
+/* Accent color, used to decorate the UI with colors. */
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
 
-  --header-secondary: #e2c1c7;
-  --interactive-hover: #e2c1c7;
-  --interactive-active: #e2c1c7;
+/* Foreground color: For things like text and icons. */
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
 
-  /* Background color */
-  --background: url(https://wallpapercave.com/wp/wp1956361.jpg) ;
-  --channeltextarea-background: var(--background-secondary);
-  --background-modifier-hover: rgba(56, 31, 31, 0.32);
-  --background-modifier-active: rgba(19, 12, 12, 0.32);
-  --background-modifier-selected: rgba(31, 21, 21, 0.32);
-  --toast-background: #5e3640 !important;
-  --toast-header: #3b1d24 !important;
-  --toast-contents: #49292f !important;
-  --toast-border: #49292f !important;
-  --input-background: var(--background-secondary);
-
-  /* Scrollbar */
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
-  --scrollbar-thin-thumb: var(--background-tertiary);
-  --scrollbar-thin-track: transparent;
-
-  /* Other */
-  --channel-text-area-placeholder: var(--interactive-normal);
-  --deprecated-quickswitcher-input-background: var(--background-primary);
-}
-.colorBrand-3cPPsm {
-  color: #c5536c;
-}
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  background-color: var(--background-modifier-hover) !important;
+/* Background color: Covers the backdrop so the app is easier to read. */
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
 }
 
-/* Buttons */
-.lookFilled-yCfaCM {
-  background-color: #c5536c !important;
-}
-.lookFilled-yCfaCM:active,
-.lookFilled-yCfaCM:hover {
-  background-color: #b64a61 !important;
-}
-.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
-  color: #c5536c;
-  border-color: #c5536c;
-}
-
-/* Hover background */
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  color: var(--interactive-normal);
-}
-
+/* If you use light theme, you can give it unique settings that are separate from dark theme. */
 .theme-light {
-  /* Text */
-  --text-normal: #a86373;
-  --header-primary: #a86373;
-  --interactive-normal: #a86373;
-  --channels-default: #a86373;
+  --dplus-backdrop: url(https://i.imgur.com/3AiL3yN.png);
+  
+  --dplus-accent-color-hue: 320;
+  --dplus-accent-color-saturation: 60%;
+  --dplus-accent-color-lightness: 31%;
+  
+  --dplus-foreground-color-hue-base: 210;
+  --dplus-foreground-color-hue-links: 197;
+  --dplus-foreground-color-saturation-amount: 1;
+  --dplus-foreground-color-lightness-amount: 1;
 
-  --text-muted: #a86373;
-  --interactive-muted: #cf92a0;
-
-  --header-secondary: #cf92a0;
-  --interactive-hover: #be7d8c;
-  --interactive-active: #b36f7f;
-
-  /* Background color */
-  --background-primary: #ffffff;
-  --background-secondary: #ffeeee;
-  --background-secondary-alt: #fdc7c7;
-  --background-tertiary: #ffbbbb;
-  --background-floating: #ffbbbb;
-  --background-accent: #c5536c;
-  --channeltextarea-background: var(--background-secondary);
-  --background-modifier-hover: rgba(56, 31, 31, 0.062);
-  --background-modifier-active: rgba(19, 12, 12, 0.123);
-  --background-modifier-selected: rgba(31, 21, 21, 0.11);
-
-  /* Scrollbar */
-  --scrollbar-auto-thumb: var(--background-tertiary);
-  --scrollbar-auto-track: var(--background-secondary-alt);
-  --scrollbar-thin-thumb: var(--background-tertiary);
-  --scrollbar-thin-track: transparent;
-
-  /* Other */
-  --deprecated-quickswitcher-input-background: var(--background-primary);
+  --dplus-background-color-hue: 320;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 1;
+  --dplus-background-color-alpha: 0.8;
 }
 
-.colorBrand-3cPPsm {
-  color: #c5536c;
-}
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  background-color: var(--background-modifier-hover) !important;
-}
+:root {
+/* Fonts */
+/* You can use any installed font on your device. */
+  --dplus-font-ui: 'Poppins';
+  --dplus-font-body: 'Roboto';
+  --dplus-font-header: 'Righteous';
 
-/* Buttons */
-.lookFilled-yCfaCM {
-  background-color: #c5536c !important;
-}
-.lookFilled-yCfaCM:active,
-.lookFilled-yCfaCM:hover {
-  background-color: #b64a61 !important;
-}
-.lookOutlined-3yKVGo:not(.colorWhite-1H92hK) {
-  color: #c5536c;
-  border-color: #c5536c;
-}
+/* Round corner sizes, measured in pixel radius.
+Set avatar/server radius to 50% to make them circular.
+   UI radius must be in pixels, otherwise things break. */
+  --dplus-radius-ui: 10px;
+  --dplus-radius-avatar: 20%;
+  --dplus-radius-server: 20%;
 
-/* Hover background */
-.colorDefault-CDqZdO.focused-3qFvc8,
-.colorDefault-CDqZdO:active:not(.hideInteraction-2jPGL_) {
-  color: var(--interactive-normal);
+/* This decides how much breathing room there should be between things like buttons and content. */
+  --dplus-spacing-ui: 10px;
+
+/* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
+   --dplus-spacing-app: 10px;
+
+/* Size of user and server icons */
+--dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-list: 32px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* The Home icon on the top left */
+--dplus-icon-home-dark: url(https://img.icons8.com/cute-clipart/512/hentai-discord.png);
+--dplus-icon-home-light: url(https://plusinsta.github.io/discord-plus/assets/discord/home_light.svg);
 }
