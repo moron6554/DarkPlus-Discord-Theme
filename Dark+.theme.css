@@ -14,9 +14,9 @@
 
 :root {
   --darkplus-bg:url(https://wallpapercave.com/wp/wp1956361.jpg);
-  --darkplus-bg2: #302f2f;
+  --darkplus-bg2: url(https://wallpapercave.com/wp/wp1956361.jpg);
   --darkplus-sec: #bb86fc;
-  --darkplus-links: #cdaef3;
+  --darkplus-links: #28141f;
   --darkplus-home-icon: url(https://cdn.discordapp.com/attachments/468141324906921984/852117175212179466/discord-avatar-512-YV0PV.png);
  --watermark-filter-invert: 0%;
   --watermark-filter-sepia: 50%;
@@ -26,3 +26,4 @@
   --watermark-filter-contrast: 200%;
   --darkplus-emoji-picker-color: 210deg;
 }
+
