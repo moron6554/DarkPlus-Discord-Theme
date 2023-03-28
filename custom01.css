@@ -14,7 +14,7 @@
 
 :root {
 	--app-bg: url(https://wallpapercave.com/wp/wp1956361.jpg);
-	--app-blur: 2px;
+	--app-blur: 5px;
 	--app-margin: 24px;
 	--app-radius: 8px; /*	-	*/
 	
