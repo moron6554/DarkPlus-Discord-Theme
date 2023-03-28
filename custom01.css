@@ -41,12 +41,7 @@
   --interactive-active: #e2c1c7;
 
   /* Background color */
-  --background-primary: #5e3640;
-  --background-secondary: #49292f;
-  --background-secondary-alt: #3b1d24;
-  --background-tertiary: #220f14;
-  --background-floating: #221115;
-  --background-accent: #c5536c;
+  --background: url(https://wallpapercave.com/wp/wp1956361.jpg) ;
   --channeltextarea-background: var(--background-secondary);
   --background-modifier-hover: rgba(56, 31, 31, 0.32);
   --background-modifier-active: rgba(19, 12, 12, 0.32);
