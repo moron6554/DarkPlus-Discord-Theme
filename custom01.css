@@ -21,9 +21,7 @@
   --dplus-backdrop: url(https://wallpapercave.com/wp/wp1956361.jpg);
 
 /* Accent color, used to decorate the UI with colors. */
-  --dplus-accent-color-hue: 320;
-  --dplus-accent-color-saturation: 60%;
-  --dplus-accent-color-lightness: 31%;
+  --dplus-accent-color: rgba(0, 0, 0, 0.89);
 
 /* Foreground color: For things like text and icons. */
   --dplus-foreground-color: rgba(0, 0, 0, 0.89);
@@ -66,13 +64,13 @@ Set avatar/server radius to 50% to make them circular.
   --dplus-radius-server: 20%;
 
 /* This decides how much breathing room there should be between things like buttons and content. */
-  --dplus-spacing-ui: 10px;
+  --dplus-spacing-ui: 5px;
 
 /* This sets how much space there should be between the app contents and the edges of the window. It also affects the distance between major UI elements, such as the server list to the channel list and channel list to the chat. */
    --dplus-spacing-app: 10px;
 
 /* Size of user and server icons */
---dplus-icon-avatar-chat: 64px;
+--dplus-icon-avatar-chat: 45px;
 --dplus-icon-avatar-list: 32px;
 --dplus-icon-avatar-profile: 80px;
 
