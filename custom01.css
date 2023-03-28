@@ -9,7 +9,7 @@
 @import url("https://nyri4.github.io/LilyPichu/main.css");
 
 /* Remove decorations */
-@import url("https://nyri4.github.io/LilyPichu/stuff/overlay.css");
+
 
 :root {
   /* --- User variables --- */
@@ -20,7 +20,7 @@
   /* Background (if you want an image replace it by : 
 
 --background-tertiary-alt: url("image-link"); without that => */
-  --background-tertiary-alt: #ffc7d4;
+  --background-tertiary-alt: url(https://wallpapercave.com/wp/wp1956361.jpg) ;
 
   /* Border-radius for the whole theme */
   --border-radius: 20px;
