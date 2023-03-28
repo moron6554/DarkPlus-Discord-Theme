@@ -61,5 +61,12 @@
 	--background-modifier-selected: rgba(255,255,255,0.125);
 }
 .homeIcon-r0w4ny {
-	 image: url(htps://img.icons8.com/cute-clipart/512/hentai-discord.png);)
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: url(https://img.icons8.com/cute-clipart/512/hentai-discord.png)
+    no-repeat;
+  width: 180px;
+  height: 236px;
+  padding-left: 180px;
 }
